@@ -1,0 +1,139 @@
+body {
+	user-select: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.score-grid {
+	display: grid;
+	grid-template-columns:
+		minmax(120px, 1fr) /* Player Name */
+		repeat(10, minmax(30px, 1fr)) /* 2 points */
+		repeat(5, minmax(30px, 1fr)) /* 3 points */
+		repeat(5, minmax(30px, 1fr)) /* 5 points */
+		minmax(80px, 1fr) /* Total - increased from 60px to 80px */
+		minmax(80px, 1fr); /* Rank */
+	gap: 2px;
+	padding: 10px;
+	background-color: #f5f5f5;
+}
+
+.rank-cell {
+	background-color: white;
+	padding: 8px;
+	text-align: center;
+	border: 1px solid #000;
+	font-weight: bold;
+	transition: background-color 0.2s ease;
+}
+
+.score-cell {
+	cursor: pointer;
+}
+
+/* Header styling */
+.cell.header {
+	background-color: #333;
+	color: white;
+	padding: 8px;
+	text-align: center;
+	font-weight: bold;
+	grid-row: 1;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Special header column spans */
+#header-1 {
+	grid-column: 1;
+}
+#header-2 {
+	grid-column: 2 / span 10;
+}
+#header-3 {
+	grid-column: 12 / span 5;
+}
+#header-4 {
+	grid-column: 17 / span 5;
+}
+#header-5 {
+	grid-column: 22;
+}
+#header-6 {
+	grid-column: 23;
+}
+
+/* Cell styling */
+.score-cell,
+.name-cell,
+.total-cell,
+.question-item-cell {
+	background-color: white;
+	padding: 8px;
+	text-align: center;
+	border: 1px solid #000;
+}
+
+.name-cell {
+	text-align: left;
+	padding-left: 12px;
+}
+
+/* Hover effect for editable cells */
+[contenteditable='true']:hover {
+	background-color: #2d2d2d;
+	cursor: pointer;
+	color: #fff;
+}
+
+/* Optional: Different background colors for different point cells */
+.score-2-cell {
+	background-color: #f8f8ff;
+}
+.score-3-cell {
+	background-color: #fff8f8;
+}
+.score-5-cell {
+	background-color: #f8fff8;
+}
+
+.score-2-cell.active {
+	background-color: #b3e0ff;
+	font-weight: bold;
+}
+
+.score-3-cell.active {
+	background-color: #ffb3b3;
+	font-weight: bold;
+}
+
+.score-5-cell.active {
+	background-color: #b3ffb3;
+	font-weight: bold;
+}
+
+.score-cell {
+	transition: background-color 0.2s ease;
+	font-weight: bold;
+}
+
+button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid #2d2d2d;
+	padding: 12px;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+button:hover {
+	filter: brightness(0.8);
+}
+
+button:active {
+	filter: brightness(1.1);
+}
