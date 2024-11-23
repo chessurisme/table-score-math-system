@@ -8,7 +8,6 @@ function addPlayer() {
 	const main = document.querySelector('main')
 	const fragment = new DocumentFragment()
 	const playerId = gameState.nextPlayerId
-	l
 	fragment.appendChild(CellFactory.createPlayerNameCell(playerId))
 
 	Object.entries(GameConfig.SCORES).forEach(([key, value]) => {
