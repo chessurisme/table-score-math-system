@@ -1,4 +1,5 @@
 import { GameState } from './game-state'
+import { GameConfig } from './game-config'
 import { CellFactory } from './cell-factory'
 import { ScoreManager } from './score-manager'
 
