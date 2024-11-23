@@ -18,3 +18,5 @@ const ScoreUtils = {
 		return this.calculateTotal(scores)
 	}
 }
+
+export { ScoreUtils }

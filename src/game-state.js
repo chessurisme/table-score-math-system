@@ -13,3 +13,5 @@ class GameState {
 		return this.#playerCount
 	}
 }
+
+export { GameState }

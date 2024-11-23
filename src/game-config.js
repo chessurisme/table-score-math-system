@@ -1,4 +1,4 @@
-const GameConfig = {
+export const GameConfig = {
 	SCORES: {
 		2: 10,
 		3: 5,
