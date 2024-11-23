@@ -1,0 +1,22 @@
+{
+  "name": "table-score-math-system",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --config"
+  },
+  "keywords": [
+    "math",
+    "player",
+    "scoring",
+    "score-system",
+    "mtap"
+  ],
+  "author": "Chessurisme",
+  "license": "MIT",
+  "description": "Table Scoring System for Math - A simple and efficient tool to calculate and display math scores.",
+  "devDependencies": {
+    "rollup": "^4.27.4"
+  }
+}
