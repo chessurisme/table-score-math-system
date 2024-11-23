@@ -1,3 +1,6 @@
+import { ScoreUtils } from './score-utils'
+import { GameConfig } from './game-config'
+
 const ScoreManager = {
 	handleDoubleClick(container) {
 		this.putPoints(container)

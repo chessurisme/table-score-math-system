@@ -1,3 +1,9 @@
+import { GameState } from './game-state'
+import { CellFactory } from './cell-factory'
+import { ScoreManager } from './score-manager'
+
+const gameState = new GameState()
+
 function addPlayer() {
 	const main = document.querySelector('main')
 	const fragment = new DocumentFragment()
