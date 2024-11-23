@@ -1,3 +1,6 @@
+import { ScoreUtils } from './score-utils'
+import { ScoreManager } from './score-manager'
+
 const CellFactory = {
 	createContainer() {
 		return document.createElement('div')
