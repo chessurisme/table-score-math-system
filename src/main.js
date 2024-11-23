@@ -1,5 +1,9 @@
 import { addPlayer } from './add-player'
 
 document.addEventListener('DOMContentLoaded', () => {
-	addPlayer()
+	const button = document.getElementById('addPlayer')
+
+	button.addEventListener('click', () => {
+		addPlayer()
+	})
 })
