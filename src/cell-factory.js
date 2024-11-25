@@ -21,9 +21,10 @@ const CellFactory = {
 		container.dataset.player = playerId
 		container.dataset.storePoints = score
 		container.dataset.points = 0
-		container.addEventListener('dblclick', () =>
+		container.addEventListener('dblclick', (event) => {
+			event.preventDefault()
 			ScoreManager.handleDoubleClick.call(ScoreManager, container)
-		)
+		})
 		return container
 	},
 
