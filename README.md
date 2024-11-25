@@ -19,7 +19,7 @@ A dynamic, interactive web-based scoring system for tracking points and rankings
 
 1. Click the "+" button to add a new player row
 2. Click on player name cells to edit names
-3. Double-click on score cells to toggle points
+3. Double-click on score cells to toggle points (or long press in mobile)
 4. Headers are editable to customize category names
 
 ### Scoring System
