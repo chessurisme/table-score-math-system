@@ -82,3 +82,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 3. Commit your changes
 4. Push to the branch
 5. Open a Pull Request
+
+# About
+
+- 👨🏼‍💻 Developer: Chessurisme
+- ⌛ Created: November 24, 2024
+- 🎟️ License: MIT License
+
+All Rights Reserved 2024
