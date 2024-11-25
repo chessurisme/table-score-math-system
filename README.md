@@ -11,7 +11,6 @@ A dynamic, interactive web-based scoring system for tracking points and rankings
 - 🏆 Automatic rank calculation with medal-style visualization
 - ✏️ Editable player names and headers
 - 🎯 Interactive scoring cells with double-click activation
-- 📱 Responsive grid layout
 - 🎨 Visual feedback with color-coded scoring sections
 
 ## Usage
@@ -19,15 +18,15 @@ A dynamic, interactive web-based scoring system for tracking points and rankings
 ### Basic Controls
 
 1. Click the "+" button to add a new player row
-2. Double-click on player name cells to edit names
+2. Click on player name cells to edit names
 3. Double-click on score cells to toggle points
 4. Headers are editable to customize category names
 
 ### Scoring System
 
-- **2 Points Section**: 10 questions (light blue when active)
-- **3 Points Section**: 5 questions (light red when active)
-- **5 Points Section**: 5 questions (light green when active)
+- **2 Points Section**: 10 questions (blue when active)
+- **3 Points Section**: 5 questions (red when active)
+- **5 Points Section**: 5 questions (green when active)
 
 ### Rankings
 
