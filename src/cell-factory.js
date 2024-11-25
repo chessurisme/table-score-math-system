@@ -21,10 +21,17 @@ const CellFactory = {
 		container.dataset.player = playerId
 		container.dataset.storePoints = score
 		container.dataset.points = 0
-		container.addEventListener('dblclick', (event) => {
-			event.preventDefault()
-			ScoreManager.handleDoubleClick.call(ScoreManager, container)
+		let longPressTimeout
+		container.addEventListener('touchstart', () => {
+			longPressTimeout = setTimeout(() => {
+				ScoreManager.handleDoubleClick.call(ScoreManager, container)
+			}, 500)
 		})
+		container.addEventListener('touchend', () => clearTimeout(longPressTimeout))
+		container.addEventListener('touchcancel', () => clearTimeout(longPressTimeout))
+		container.addEventListener('dblclick', () =>
+			ScoreManager.handleDoubleClick.call(ScoreManager, container)
+		)
 		return container
 	},
 
